@@ -7,3 +7,5 @@ What are the primary weaknesses of a hash table?
 3. In the worst case, all operations have an O(n) time complexity 
 4. The keys are not stored in any order. 
 5. None of the above. 
+
+My answers were numbers 2 and 3. 
