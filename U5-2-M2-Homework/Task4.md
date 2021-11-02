@@ -2,9 +2,7 @@
 
 ## Instructions
 - You are given a non-empty array of integers.
-
 - One element appears exactly once, with every other element appearing at least twice, perhaps more.
-
 - Write a function that can find and return the element that appears exactly once.
 
 ## Example 1:
