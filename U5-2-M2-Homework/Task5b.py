@@ -1,29 +1,3 @@
-# def csAverageOfTopFive(scores):
-#     if not scores:
-#         return []
-
-#     scoresMap = {}
-#     for eachscore in scores:
-#         if eachscore[0] in scoresMap:
-#             scoresMap[eachscore[0].append(eachscore[1])]
-#             print(scoresMap)
-#         else:
-#             # print("made it to else")
-#             scoresMap[eachscore[0]] = []
-
-#     results = []
-#     for key, value in scoresMap.items():
-#         value.sort(reverse=True)
-#         if len(value) >= 5:
-#             average = value[:5]
-#         else:
-#             average = value
-
-#         scoresMap[key] = sum(average)//len(average)
-#         results.append([key, scoresMap[key]])
-
-#     return results
-
 import math
 def csAverageOfTopFive(scores):
     '''
