@@ -38,14 +38,22 @@ def csAverageOfTopFive(scores):
             students[student[0]] = []
         students[student[0]].append(student[1])
         
-    for i, eachStudent in enumerate(students):
-        # print("Greater than or = five:", students[eachStudent])
-        topFive = sorted(students[eachStudent])[-5:]
-        # print("Students Dict Sorted", students)
-        # print("Top Five", topFive)
-        topFiveSumed = sum(topFive) // len(topFive)
-        results.append([i+1, topFiveSumed])
+    for stud in students:
+        stud = students[stud].sort()
+        print(students)
+        
+    for stu in students:
+        if len(students[stu]) > 5:
+            students[stu] = students[stu][-5:]
+    
+    for st in students:
+        students[st] = math.floor(sum(students[st]) / len(students[st]))
+    
+    for key, value in students.items():
+        results.append([key, value])
+        
     return results
     
+    
 
-print("final Avg Score Per Student", csAverageOfTopFive([[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]))
+print(csAverageOfTopFive([[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]))
