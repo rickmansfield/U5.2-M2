@@ -21,6 +21,7 @@ return conveted list to string
 #         # print(s)
 #     return s.pop()
 
+# This is the ideal solition for class
 # print(help(dict.items))
 def csFindTheSingleNumber(nums):
     frequency = {}
@@ -36,7 +37,7 @@ def csFindTheSingleNumber(nums):
             return num
     return -1
 
-# alternative after researching built in fuctions
+# alternative after researching built in fuctions better for real world
 from collections import Counter
 def csFindTheSingleNumber2(nums):
     frequency = Counter(nums)
@@ -46,4 +47,4 @@ def csFindTheSingleNumber2(nums):
 
 print(csFindTheSingleNumber([1,1,2,1]))
 print(csFindTheSingleNumber2([1,1,2,1]))
-print(csFindTheSingleNumber3([1,1,2,1]))
+# print(csFindTheSingleNumber3([1,1,2,1]))
