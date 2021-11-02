@@ -6,10 +6,11 @@ If eachNum in num not in nums:
     add to new empty list
 return conveted list to string
 """
+# this solution is too difficult with out hash tables. So I skipped finishing it. 
 # import builtins
-# print(dir(builtins))
-# print(help(str))
-# def csFindTheSingleNumber(nums):
+# # print(dir(builtins))
+# # print(help(str))
+# def csFindTheSingleNumber3(nums):
 #     s = []
 #     for eachNum in nums:
 #         # print(eachNum)
@@ -17,10 +18,10 @@ return conveted list to string
 #             s.append(eachNum)
 #         else:
 #             s.remove(eachNum)
-#         print(s)
+#         # print(s)
 #     return s.pop()
 
-print(help(dict.items))
+# print(help(dict.items))
 def csFindTheSingleNumber(nums):
     frequency = {}
     for num in nums:
@@ -45,3 +46,4 @@ def csFindTheSingleNumber2(nums):
 
 print(csFindTheSingleNumber([1,1,2,1]))
 print(csFindTheSingleNumber2([1,1,2,1]))
+print(csFindTheSingleNumber3([1,1,2,1]))
