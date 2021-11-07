@@ -14,7 +14,7 @@ def csAverageOfTopFive(scores):
         
     for stud in students:
         stud = students[stud].sort()
-        print(students)
+        print("Students Dict", students)
         
     for stu in students:
         if len(students[stu]) > 5:
